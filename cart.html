@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,63 +34,65 @@
             <p class="category-catalog-text">SHOPPING CART</p>
         </div>
     </section>
-    <section class="product">
-        <button class="carousel-button-back" type="button"><img src="img/arrow-left.svg" alt="arrow-back"></button>
-            <div class="product-wrapper">
-                <div class="carousel">
-                    <img src="img/carousel.png" alt="product">
+    <section class="cart">
+        <div class="cart-wrapper">
+            <div class="cart-box">
+                <div class="cart-item">
+                        <img class="cart-item-img" src="img/card3.png" alt="item">
+                    <div class="cart-text-box">
+                        <div class="cart-heading-box">
+                            <h2 class="cart-heading">MANGO PEOPLE T-SHIRT</h2>
+                            <button class="cart-item-btn"><img src="img/close.svg" alt=""></button>
+                        </div>
+                        <ul class="cart-text">
+                            <li class="cart-text-list">Price: <span class="cart-price">$300</span></li>
+                            <li class="cart-text-list">Color: Red</li>
+                            <li class="cart-text-list">Size: Xl</li>
+                            <li class="cart-text-list">Quantity:<input class="cart-list-input" type="text" placeholder="2"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cart-item">
+                        <img class="cart-item-img" src="img/card7.png" alt="item">
+                    <div class="cart-text-box">
+                        <div class="cart-heading-box">
+                            <h2 class="cart-heading">MANGO PEOPLE T-SHIRT</h2>
+                            <button class="cart-item-btn"><img src="img/close.svg" alt=""></button>
+                        </div>
+                        <ul class="cart-text">
+                            <li class="cart-text-list">Price: <span class="cart-price">$300</span></li>
+                            <li class="cart-text-list">Color: Red</li>
+                            <li class="cart-text-list">Size: Xl</li>
+                            <li class="cart-text-list">Quantity:<input class="cart-list-input" type="text" placeholder="2"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cart-btn-box">
+                    <button class="cart-btn">CLEAR SHOPPING CART</button>
+                    <button class="cart-btn">CONTINUE SHOPPING</button>
                 </div>
             </div>
-        <button class="carousel-button-next" type="button"><img src="img/arrow-right.svg" alt="arrow-next"></button>
-    </section>
-    <section class="description-items">
-        <div class="description">
-                <h2 class="description-heading">WOMEN COLLECTION</h2>
-                <div class="description-border"></div>
-                <div class="description-item">
-                    <h3 class="description-item-heading">MOSCHINO CHEAP AND CHIC</h3>
-                    <p class="description-item-text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-                    <p class="description-item-price">$561</p>
-                </div>
-                <div class="description-filter-border"></div>
-                <div class="description-filter-box">
-                    <button class="description-filter">CHOOSE COLOR<img class="description-img-arrow"
-                        src="img/arrow.svg" alt="arrow"></button>
-                    <button class="description-filter">CHOOSE SIZE<img class="description-img-arrow"
-                        src="img/arrow.svg" alt="arrow"></button>
-                    <button class="description-filter">QUANTITY<img class="description-img-arrow"
-                        src="img/arrow.svg" alt="arrow"></button>
-                </div>
-                <button class="description-filter-add"><img class="description-img-cart"
-                    src="img/cart-pink.svg" alt="arrow">Add to Cart</button>
-            </div>
-    </section>
-    <section class="product-items">
-        <div class="product-items-wrapper">
-            <div class="items-box">
-                <div class="items-cards">
-                    <img src="img/card4.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-                <div class="items-cards product-item-card">
-                    <img src="img/card3.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-                <div class="items-cards">
-                    <img src="img/card6.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
+            <div class="cart-adress">
+                <fieldset class="cart-adress-box">
+                    <legend class="cart-adress-heading">SHIPPING ADRESS</legend>
+                    <input class="cart-adress-input" type="text" placeholder="Country">
+                    <input class="cart-adress-input" type="text" placeholder="State">
+                    <input class="cart-adress-input" type="text" placeholder="Postcode / Zip">
+                </fieldset>
+                <button class="cart-adress-btn">GET A QUOTE</button>
+                <div class="cart-total-box">
+                    <div class="cart-sub-total">
+                      <p class="cart-sub-total-text">SUB TOTAL</p>
+                      <p class="cart-sub-total-price">$900</p>  
+                    </div>
+                    <div class="cart-grand-total">
+                        <p class="cart-grand-total-text">GRAND TOTAL</p>
+                        <p class="cart-grand-total-price">$900</p>
+                    </div>
+                    <div class="cart-total-btn-box">
+                        <div class="cart-adress-border"></div>
+                        <button class="cart-total-btn">PROCEED TO CHECKOUT</button>
+                    </div>
                 </div>
             </div>
         </div>
