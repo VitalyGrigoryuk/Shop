@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,176 +37,51 @@
     </header>
     <section class="catalog-category">
         <div class="catalog-category-wrapper wrapper">
-            <p class="category-catalog-text">NEW ARRIVALS</p>
-            <ul class="catalog-breadcrumbs">
-                <li class="catalog-breadcrumbs-li"><a class="catalog-category-link" href="#">HOME</a></li>
-                <li class="catalog-breadcrumbs-li"><a class="catalog-category-link" href="#">MEN</a></li>
-                <li class="catalog-breadcrumbs-li"><a class="catalog-category-link active-link" href="#">NEW ARRIVALS</a></li>
-            </ul>
+            <h1 class="category-catalog-text">REGISTRATION</h1>
         </div>
     </section>
-    <section class="catalog-items">
-        <div class="catalog-items-wrapper wrapper">
-            <div class="catalog-item-filter-box">
-                <details class="items-filter-button">
-                    <summary class="items-filter-heading">FILTER<svg class="items-filter-img" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="items-filter-img-color" d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
-                        </svg></summary>
-                    <div class="items-filter-details-box">
-                        <details class="items-filter-details">
-                            <summary class="items-filter-category">CATEGORY</summary>
-                            <ul>
-                                <li class="item-filter-list">Accessories</li>
-                                <li class="item-filter-list">Bags</li>
-                                <li class="item-filter-list">Denim</li>
-                                <li class="item-filter-list">Hoodies & Sweatshirts</li>
-                                <li class="item-filter-list">Jackets & Coats</li>
-                                <li class="item-filter-list">Polos</li>
-                                <li class="item-filter-list">Shirts</li>
-                                <li class="item-filter-list">Shoes</li>
-                                <li class="item-filter-list">Sweaters & Knits</li>
-                                <li class="item-filter-list">T-Shirts</li>
-                                <li class="item-filter-list">Tanks</li>
-                            </ul>
-                        </details>
-                        <details class="items-filter-details">
-                            <summary class="items-filter-category">BRAND</summary>
-                        </details>
-                        <details class="items-filter-details">
-                            <summary class="items-filter-category">DESIGNER</summary>
-                        </details>
-                    </div>
-                </details>
+    <section class="registration">
+        <div class="registration-wrapper wrapper">
+            <div class="registration-box">
+                <form action="#">
+                    <fieldset class="registration-box-name">
+                        <legend class="registration-box-name-heading">Your Name</legend>
+                        <input class="registration-box-name-input" type="text" placeholder="First Name" required>
+                        <input class="registration-box-name-input" type="text" placeholder="Last Name" required>
+                    </fieldset>
+                    <fieldset class="registration-box-genger">
+                        <label class="registration-box-genger-label"><input class="registration-box-genger-radio" type="radio" name="gender" checked>Male</label>
+                        <label class="registration-box-genger-label"><input class="registration-box-genger-radio" type="radio" name="gender">Female</label>
+                    </fieldset>
+                    <fieldset class="registration-box-email">
+                        <legend class="registration-box-name-heading">Login details</legend>
+                        <input class="registration-box-name-input" type="text" placeholder="Password" required>
+                        <input class="registration-box-name-input" type="email" placeholder="Email" required>
+                    </fieldset>
+                    <p class="registration-box-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                    <button class="registration-box-btn">JOIN NOW<svg class="registration-box-img" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" fill="white"/>
+                        </svg>
+                        </button>
+                </form>
+            </div>
+            <div class="registration-loyalty-box">
+                <h2 class="registration-loyalty-heading">LOYALTY HAS ITS PERKS</h2>
+                <p class="registration-loyalty-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                <ul class="registration-loyalty-list">
+                    <li class="registration-loyalty-list-text">15% off welcome offer
+                    </li>
+                    <li class="registration-loyalty-list-text">Free shipping, returns and exchanges on all orders
 
+                    </li>
+                    <li class="registration-loyalty-list-text">$10 off a purchase on your birthday
 
-                <div class="catalog-item-sorting-box">
-                    <button class="items-sorting-button">TRENDING NOW<img class="items-sorting-img-arrow"
-                            src="img/arrow.svg" alt="arrow"></button>
-                    <details class="items-sorting-button">
-                        <summary class="items-sorting-heading">SIZE<svg class="items-sorting-img-arrow" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="items-sorting-img-color" d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
-                        </svg></summary>
-                        <div class="items-sorting-checkbox-box">
-                            <p class="items-sorting-checkbox-text"><input class="items-sorting-checkbox" type="checkbox">XS</p>
-                            <p class="items-sorting-checkbox-text"><input class="items-sorting-checkbox" type="checkbox">S</p>
-                            <p class="items-sorting-checkbox-text"><input class="items-sorting-checkbox" type="checkbox">M</p>
-                            <p class="items-sorting-checkbox-text"><input class="items-sorting-checkbox" type="checkbox">L</p>
-                        </div>
-                    </details>
-                    <button class="items-sorting-button">PRICE<img class="items-sorting-img-arrow" src="img/arrow.svg"
-                            alt="arrow"></button>
-                </div>
-            </div>
-            <div class="items-box">
-                <div class="catalog-item-cards">
-                    <img src="img/card1.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-                <div class="catalog-item-cards middle-cards">
-                    <img src="img/card7.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-                <div class="items-cards">
-                    <img src="img/card3.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-                <div class="items-cards">
-                    <img src="img/card4.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-                <div class="items-cards middle-cards">
-                    <img src="img/card8.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-                <div class="items-cards">
-                    <img src="img/card9.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-                <div class="items-cards">
-                    <img src="img/card10.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-                <div class="items-cards middle-cards">
-                    <img src="img/card11.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-                <div class="items-cards">
-                    <img src="img/card12.png" alt="item">
-                    <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="item-card-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="item-card-price">$52.00</p>
-                </div>
-            </div>
-            <div class="catalog-items-pagination">
-                <a class="catalog-items-arrow" href="#"><svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="arrow-left-pagination" d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" fill="black"/>
-                    </svg></a>
-                <a class="catalog-items-page active-page" href="#">1</a>
-                <a class="catalog-items-page" href="#">2</a>
-                <a class="catalog-items-page" href="#">3</a>
-                <a class="catalog-items-page" href="#">4</a>
-                <a class="catalog-items-page" href="#">5</a>
-                <a class="catalog-items-page" href="#">6</a>
-                <a class="catalog-items-arrow" href="#"><svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="arrow-right-pagination" d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" fill="black"/>
-                    </svg>
-                    </a>
-            </div>
-        </div>
-    </section>
-    <section class="information">
-        <div class="information-wrapper wrapper">
-            <div class="information-box">
-                <img class="information-box-img" src="img/delivery.svg" alt="delivery">
-                <p class="information-box-text">Free Delivery</p>
-                <p class="information-box-text2">Worldwide delivery on all. Authorit tively morph next-generation innov
-                    tion with extensive models.</p>
-            </div>
-            <div class="information-box">
-                <img class="information-box-img" src="img/quality.svg" alt="quality">
-                <p class="information-box-text quality-text">Sales & discounts</p>
-                <p class="information-box-text2">Worldwide delivery on all. Authorit tively morph next-generation innov
-                    tion with extensive models.</p>
-            </div>
-            <div class="information-box">
-                <img class="information-box-img" src="img/sales.svg" alt="sales">
-                <p class="information-box-text">Quality assurance</p>
-                <p class="information-box-text2">Worldwide delivery on all. Authorit tively morph next-generation innov
-                    tion with extensive models.</p>
-            </div>
+                    </li>
+                    <li class="registration-loyalty-list-text">Early access to products</li>
+                    <li class="registration-loyalty-list-text">Exclusive offers & rewards</li>
+                </ul>
+            </div>    
         </div>
     </section>
     <section class="subscribe">
@@ -217,7 +92,7 @@
                         condimentum</span>“</p>
             </div>
             <div class="subscribe-box2">
-                <h2 class="subscribe-box2-text"><span class="subscribe-box2-text-bold">SUBSCRIBE</span> <br /> FOR OUR
+                <h2 class="subscribe-box2-text"><span class="subscribe-box2-text-bold">SUBSCRIBE</span><br/>FOR OUR
                     NEWLETTER AND PROMOTION</h2>
                 <form class="subscribe-box2-form" action="#">
                     <input type="email" placeholder="Enter Your Email" class="subscribe-box2-form-email" required><br/>
