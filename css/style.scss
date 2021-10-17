@@ -6,8 +6,15 @@ $main-pink: #F16D7F;
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 
@@ -15,6 +22,7 @@ body {
 
 .header {
     background: #222222;
+    flex: 0 0 auto;
 }
 
 .wrapper {
@@ -152,7 +160,6 @@ body {
 }
 
 .header-nav-list {
-    
     list-style: none;
     margin-bottom: 20px;
 }
@@ -164,11 +171,6 @@ body {
     line-height: 17px;
     color: $main-pink;
     text-decoration: none;
-}
-
-.header-nav-list-heading:hover {
-    color: #df4b5f;
-    transition: 0.2s;
 }
 
 .header-nav-list-link {
@@ -195,6 +197,7 @@ body {
 
 .offer {
     background: #F1E4E6;
+    flex: 1 0 auto;
 }
 
 .offer-box {
@@ -225,6 +228,7 @@ body {
     line-height: 38px;
     margin-right: 90px;
     margin-bottom: 45px;
+    max-width: 410px;
 }
 
 .offer-heading-bold {
@@ -249,6 +253,7 @@ body {
 
 .category {
     background: white;
+    flex: 1 0 auto;
 }
 
 .category-wrapper {
@@ -262,6 +267,7 @@ body {
     width: 31%;
     min-height: 260px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -312,14 +318,19 @@ body {
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+    max-width: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .category-box-text-bold {
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    
     color: $main-pink;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 300px;
 }
 
 /* items товары главная страница */
@@ -327,6 +338,7 @@ body {
 
 .items {
     background: white;
+    flex: 1 0 auto;
 }
 
 .items-wrapper {
@@ -363,6 +375,8 @@ body {
     background: #F8F8F8;
     max-width: 360px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .items-cards:hover .items-card-mask {
@@ -373,6 +387,14 @@ body {
 .catalog-item-cards {
     background: #F8F8F8;
     max-width: 360px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-item-cards:hover .items-card-mask {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 .items-card-mask {
@@ -425,6 +447,7 @@ body {
     line-height: 17px;
     color: #5D5D5D;
     margin: 12px 29px 18px 18px;
+    flex: 1 0 auto;
 }
 
 .item-card-price {
@@ -433,6 +456,7 @@ body {
     color: $main-pink;
     margin-left: 18px;
     margin-bottom: 20px;
+    flex: 0 0 auto;
 }
 
 .items-button-box {
@@ -447,6 +471,7 @@ body {
     color: #F26376;
     text-decoration: none;
     padding: 14px 38px;
+    display: inline-block;
 }
 
 .items-button:hover {
@@ -455,11 +480,18 @@ body {
     transition: 0.2s;
 }
 
+.items-button:active {
+    color: #FFFFFF;
+    background: $main-pink;
+    transform: scale(0.96);
+}
+
 /* information инфа главная страница */
 
 
 .information {
     background: #222224;
+    flex: 1 0 auto;
 }
 
 .information-wrapper {
@@ -504,12 +536,13 @@ body {
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: cover;
+    flex: 1 0 auto;
 }
+
 .subscribe-wrapper {
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
-    
 }
 
 .subscribe-box1 {
@@ -540,15 +573,18 @@ body {
 .subscribe-box2 {
     align-self: center;
     margin-right: 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 .subscribe-box2-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    text-align: center;
     color: #222224;
     margin-bottom: 32px;
+    max-width: 400px;
+    align-self: center;
 }
 
 .subscribe-box2-text-bold {
@@ -556,10 +592,12 @@ body {
     font-size: 24px;
     line-height: 40px;
     font-weight: bold;
+    align-self: center;
 }
 
 .subscribe-box2-form {
-    display: flex; 
+    display: flex;
+    justify-content: center;
 }
 
 .subscribe-box2-form-email {
@@ -597,10 +635,15 @@ body {
     transition: 0.2s;
 }
 
+.subscribe-box2-button:active {
+    transform: scale(0.97);
+}
+
 /* footer подвал главная страница */
 
 .footer {
     background: #222224;
+    flex: 0 0 auto;
 }
 
 .footer-wrapper {
@@ -637,6 +680,7 @@ body {
 
 .catalog-category {
     background: #F8F3F4;
+    flex: 1 0 auto;
 }
 
 .catalog-category-wrapper {
@@ -700,6 +744,7 @@ body {
 
 .catalog-items {
     background: white;
+    flex: 1 0 auto;
 }
 
 .catalog-items-wrapper {
@@ -760,6 +805,7 @@ details > summary {
     margin-top: -13px;
     width: 360px;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.13));
+    z-index: 1;
 }
 
 .items-filter-button[open]>summary {
@@ -843,6 +889,7 @@ details > summary {
     padding-left: 9px;
     padding-right: 9px;
     margin-top: 5px;
+    z-index: 1;
 }
 
 .items-sorting-checkbox-box[open] {
@@ -957,6 +1004,7 @@ details > summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1 0 auto;
     
 
     &-wrapper {
@@ -995,6 +1043,7 @@ details > summary {
 .description-items {
     background: #FFFFFF;
     height: 550px;
+    flex: 1 0 auto;
 }
 
 .description {
@@ -1099,10 +1148,17 @@ details > summary {
         background: $main-pink;
         color: #FFFFFF;
     }
+
+    &-filter-btn:active {
+        color: #FFFFFF;
+        background: $main-pink;
+        transform: scale(0.96);
+    }
 }
 
 .product-items {
     background: white;
+    flex: 1 0 auto;
     
     &-wrapper {
         display: flex;
@@ -1118,6 +1174,7 @@ details > summary {
 
 .cart {
     background: #FFFFFF;
+    flex: 1 0 auto;
 
     &-wrapper {
         display: flex;
@@ -1179,6 +1236,10 @@ details > summary {
         transform: scale(1.3);
     }
 
+    &-item-btn:active {
+        transform: scale(1);
+    }
+
     &-text {
         list-style: none;
         margin-left: 32px;
@@ -1231,11 +1292,22 @@ details > summary {
         line-height: 17px;
         color: #000000;
     }
+    &-btn:hover {
+        color: #FFFFFF;
+        background: $main-pink;
+        transition: 0.3s;
+    }
+
+    &-btn:active {
+        color: #FFFFFF;
+        background: $main-pink;
+        transform: scale(0.97);
+    }
 
     &-btn-box-mobile {
         display: none;
         justify-content: space-between;
-        }
+    }
 
     &-btn-mobile {
         background: #FFFFFF;
@@ -1247,12 +1319,6 @@ details > summary {
         font-size: 14px;
         line-height: 17px;
         color: #000000;
-    }
-
-    &-btn:hover {
-        color: #FFFFFF;
-        background: $main-pink;
-        transition: 0.3s;
     }
 
     &-adress {
@@ -1297,7 +1363,6 @@ details > summary {
     }
 
     &-adress-btn {
-        width: 105px;
         background: #FFFFFF;
         border: 1px solid #A4A4A4;
         font-style: normal;
@@ -1312,6 +1377,12 @@ details > summary {
         color: #FFFFFF;
         background: $main-pink;
         transition: 0.3s;
+    }
+
+    &-adress-btn:active {
+        color: #FFFFFF;
+        background: $main-pink;
+        transform: scale(0.94);
     }
 
     &-total-box {
@@ -1397,6 +1468,12 @@ details > summary {
         transition: 0.3s;
     }
 
+    &-total-btn:active {
+        color: #FFFFFF;
+        background: #E05C6E;
+        transform: scale(0.97);
+    }
+
 
 }
 
@@ -1404,6 +1481,7 @@ details > summary {
 
 .registration {
     background: #FFFFFF;
+    flex: 1 0 auto;
 
     &-wrapper {
         display: flex;
@@ -1507,6 +1585,12 @@ details > summary {
     &-box-btn:hover {
         background: #E05C6E;
         transition: 0.3s;
+    }
+
+    &-box-btn:active {
+        color: #FFFFFF;
+        background: #E05C6E;
+        transform: scale(0.96);
     }
 
     &-loyalty-heading {
