@@ -460,7 +460,7 @@ body {
           flex-direction: column;
 }
 
-.items-cards:hover .items-card-mask {
+.items-cards-img-box:hover .items-card-mask {
   opacity: 1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -479,7 +479,7 @@ body {
           flex-direction: column;
 }
 
-.catalog-item-cards:hover .items-card-mask {
+.catalog-items-cards-img:hover .items-card-mask {
   opacity: 1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -539,6 +539,15 @@ body {
   color: #000000;
   margin-top: 25px;
   margin-left: 18px;
+}
+
+.item-card-heading-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.item-card-heading-link:hover {
+  color: #F16D7F;
 }
 
 .item-card-text {

@@ -379,7 +379,7 @@ body {
     flex-direction: column;
 }
 
-.items-cards:hover .items-card-mask {
+.items-cards-img-box:hover .items-card-mask {
     opacity: 1;
     transition: 0.2s;
 }
@@ -392,7 +392,7 @@ body {
     flex-direction: column;
 }
 
-.catalog-item-cards:hover .items-card-mask {
+.catalog-items-cards-img:hover .items-card-mask {
     opacity: 1;
     transition: 0.2s;
 }
@@ -410,6 +410,9 @@ body {
     opacity: 0;
     transition: 0.5s;
 }
+
+
+
 
 .items-card-mask-btn {
     background: transparent;
@@ -439,7 +442,18 @@ body {
     color: #000000;
     margin-top: 25px;
     margin-left: 18px;
+
 }
+
+.item-card-heading-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.item-card-heading-link:hover {
+    color: $main-pink;
+}
+
 
 .item-card-text {
     font-weight: 300;
