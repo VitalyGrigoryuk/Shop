@@ -77,7 +77,8 @@ body {
 }
 
 .header-link-cart {
-    margin-left: 33px;
+    background-color: transparent;
+    border: none;
 }
 
 .header-link-cart:hover .header-img-cart-color {
@@ -88,6 +89,24 @@ body {
 .header-link-cart:active .header-img-cart-color {
     transform: scale(0.93);
     fill: #EF5B70;
+}
+
+.header-cart-box {
+    margin-left: 33px;
+}
+
+.cart-active-item {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #f16d7f;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 19px;
 }
 
 .header-link-login {
@@ -1491,7 +1510,49 @@ details > summary {
 
 }
 
-//* registration страница регистрации*//
+//* выпадающее окно корзины *//
+
+.cart-box-menu {
+    width: 600px;
+    background-color: #FFFFFF;
+    display: block;
+    visibility: hidden;
+    right: 170px;
+    position: absolute;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 16px;
+    z-index: 3;
+}
+
+.cart-box-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.cart-box-section {
+    font-weight: bold;
+}
+
+.cart-box-total {
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.basketRow {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+
+    
+
+
+}
+
+//* registration страница регистрации *//
 
 .registration {
     background: #FFFFFF;
@@ -1860,9 +1921,26 @@ details > summary {
         width: 350px;
     }
 
+    .cart-box-menu {
+        right: 0;
+    }
     .cart-total-box {
         width: 100%;
         height: 220px;
+    }
+
+    /* выпадающее окно корзины*/
+
+    .cart-box-name {
+        grid-gap: 30px;
+    }
+
+    .cart-box-section {
+        font-size: 13px;
+    }
+
+    .cart-box-total {
+        font-size: 13px;
     }
 }
 
@@ -2105,5 +2183,24 @@ details > summary {
 
     .cart-total-box {
         margin-top: 48px;
+    }
+
+    /* выпадающее окно корзины*/
+
+    .cart-box-menu {
+        width: 375px;
+        padding-left: 16px;
+    }
+
+    .cart-box-name {
+        grid-gap: 20px;
+    }
+
+    .cart-box-section {
+        font-size: 11px;
+    }
+
+    .cart-box-total {
+        font-size: 11px;
     }
 }
