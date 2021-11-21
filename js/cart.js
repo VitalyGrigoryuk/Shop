@@ -50,7 +50,7 @@ function getTotalCartPrice() {
 // Отрисовывает в корзину информацию о продукте.
 function renderProductInCart(productId) {
     const cartBoxEl = document
-    .querySelector(`.cartBoxMenu[data-productId="${productId}"]`);
+    .querySelector(`.basketRow[data-productId="${productId}"]`);
     if (!cartBoxEl) {
         renderNewProductInCart(productId);
         return;
@@ -59,8 +59,8 @@ function renderProductInCart(productId) {
      // всех добавленных продуктах.
     const product = cart[productId];
   // Ставим новое количество в строке продукта корзины.
-    cartRowEl.querySelector('.productCount').textContent = product.count;
-    cartRowEl
+    cartBoxEl.querySelector('.productCount').textContent = product.count;
+    cartBoxEl
     .querySelector('.productTotalRow')
     .textContent = (product.price * product.count).toFixed(2);
 };
